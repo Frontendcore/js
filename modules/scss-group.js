@@ -5,10 +5,10 @@ TinyCore.AMD.define('scss-group', ['devicePackage'], function () {
 		},
 		onStart: function () {
 
-			var aTargets = FC.getDataModules('scss-group'),
+			var aTargets = oTools.getDataModules('scss-group'),
 				self = this;
 
-			FC.trackEvent('JS_Libraries', 'call', 'scss-group' );
+			oTools.trackEvent('JS_Libraries', 'call', 'scss-group' );
 
 			$(aTargets).each(function () {
 				self.autobind(this);
